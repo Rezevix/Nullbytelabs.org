@@ -3,9 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nullbyte Labs | Games, Mods, Tools & Websites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="grid-bg"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <nav>
+        <a href="#" class="logo">
+            <div class="logo-icon">⌀</div>
+            nullbyte labs
+        </a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-cta">Get in Touch</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-badge">// Available for new projects</div>
+        <h1>We <span>build</span> games, mods, tools, and websites.</h1>
+        <p class="hero-sub">A small creative studio crafting digital experiences with precision and passion. From game modifications to custom web solutions.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">Start a Project</a>
+            <a href="#services" class="btn-secondary">See Our Work</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="section-header">
+            <div class="section-label">What We Do</div>
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-desc">From concept to deployment, we handle every aspect of your digital project with care.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🎮</div>
+                <div class="service-content">
+                    <h3>Game Development</h3>
+                    <p>Indie games and prototypes built with creativity and technical expertise. We bring ideas to life with engaging gameplay.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Unity</span>
+                        <span class="service-tag">Godot</span>
+                        <span class="service-tag">Unreal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <div class="service-content">
+                    <h3>Modding</h3>
+                    <p>Custom modifications for your favorite games. New features, QoL improvements, and complete overhauls.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Plugins</span>
+                        <span class="service-tag">Assets</span>
+                        <span class="service-tag">Patches</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📜</div>
+                <div class="service-content">
+                    <h3>Scripting</h3>
+                    <p>Custom scripts for automation, game logic, bots, and integrations. If it can be scripted, we can build it.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Python</span>
+                        <span class="service-tag">Lua</span>
+                        <span class="service-tag">Bots</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <div class="service-content">
+                    <h3>Developer Tools</h3>
+                    <p>Utilities and applications that streamline workflows. CLI tools, APIs, and software that saves time.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">CLI</span>
+                        <span class="service-tag">APIs</span>
+                        <span class="service-tag">Automation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <div class="service-content">
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive websites and web apps. Clean code, fast performance, and designs that stand out.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">React</span>
+                        <span class="service-tag">Node.js</span>
+                        <span class="service-tag">Full Stack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <div class="section-label">Meet the Team</div>
+                <h2>Hey, we're the humans behind the code.</h2>
+                <p>Nullbyte Labs is just us—two developers who met through a shared love of games and tinkering with things. What started as side projects and late-night coding sessions turned into a real studio.</p>
+                <div class="team-cards">
+                    <div class="team-card">
+                        <div class="team-avatar">👩‍💻</div>
+                        <div class="team-info">
+                            <h4>You</h4>
+                            <span class="team-role">Co-Founder</span>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">👨‍💻</div>
+                        <div class="team-info">
+                            <h4>Liam</h4>
+                            <span class="team-role">Co-Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <p style="margin-top: 1.5rem;">We're not a faceless agency—when you work with us, you're working directly with the people building your project. We care about doing good work for good people.</p>
+            </div>
+            <div class="about-visual">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dot red"></div>
+                        <div class="terminal-dot yellow"></div>
+                        <div class="terminal-dot green"></div>
+                        <span class="terminal-title">nullbyte@labs:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$ </span>
+                            <span class="terminal-cmd">cat values.txt</span>
+                        </div>
+                        <div class="terminal-line terminal-output">✓ Honest communication</div>
+                        <div class="terminal-line terminal-output">✓ Fair, transparent pricing</div>
+                        <div class="terminal-line terminal-output">✓ No corporate BS</div>
+                        <div class="terminal-line terminal-output">✓ We actually reply to emails</div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$ </span>
+                            <span class="terminal-cmd">cat fun_facts.txt</span>
+                        </div>
+                        <div class="terminal-line terminal-output">☕ Powered by caffeine</div>
+                        <div class="terminal-line terminal-output">🎮 Probably gaming rn</div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$ </span>
+                            <span class="terminal-cursor"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-header">
+            <div class="section-label">Kind Words</div>
+            <h2 class="section-title">What people are saying</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Super responsive and really understood what I was looking for. The mod they built exceeded my expectations!"</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">🎮</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Happy Client</div>
+                        <div class="testimonial-project">Game Mod Project</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Finally, developers who actually listen. They built exactly what I needed and were great to work with."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">⚡</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Satisfied Customer</div>
+                        <div class="testimonial-project">Automation Tool</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card placeholder-card">
+                <div class="placeholder-content">
+                    <span class="placeholder-icon">💬</span>
+                    <p>Your review could be here!</p>
+                    <span class="placeholder-sub">We're just getting started</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Let's build something together.</h2>
+        <p>Got a project in mind? Reach out and let's chat—no pressure, just conversation.</p>
+        <p class="contact-email">Or email us directly at <a href="mailto:hello@nullbytelabs.com">hello@nullbytelabs.com</a></p>
+        
+        <form class="contact-form" id="contactForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="project">Project Type</label>
+                <select id="project" name="project">
+                    <option value="">Select a service...</option>
+                    <option value="game">Game Development</option>
+                    <option value="mod">Modding</option>
+                    <option value="scripting">Scripting</option>
+                    <option value="tool">Developer Tools</option>
+                    <option value="web">Web Development</option>
+                    <option value="other">Something Else</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Tell us about your project</label>
+                <textarea id="message" name="message" placeholder="Describe your idea, goals, and any specific requirements..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="submitBtn">
+                <span class="btn-text">Send Message →</span>
+                <span class="btn-loading" style="display: none;">Sending...</span>
+            </button>
+            <div class="form-status" id="formStatus"></div>
+        </form>
+        
+        <div class="trust-badges">
+            <div class="trust-badge">
+                <span>🔒</span> Your info stays private
+            </div>
+            <div class="trust-badge">
+                <span>⚡</span> Usually reply within 24h
+            </div>
+            <div class="trust-badge">
+                <span>💬</span> Free project consultation
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="footer-logo">nullbyte labs</a>
+            <div class="footer-links">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© 2025 Nullbyte Labs. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
