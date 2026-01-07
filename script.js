@@ -50,7 +50,7 @@ form.addEventListener('submit', async (e) => {
     try {
         // Replace 'YOUR_FORM_ID' with your Formspree form ID
         // Example: https://formspree.io/f/xyzabcde
-        const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        const response = await fetch('https://formspree.io/f/xpqwvlrq', {
             method: 'POST',
             body: formData,
             headers: {
