@@ -27,8 +27,6 @@ window.addEventListener('scroll', () => {
 });
 
 // Contact Form Handler
-// NOTE: Replace YOUR_FORM_ID with your actual Formspree form ID
-// Get one free at https://formspree.io
 const form = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 const btnText = submitBtn.querySelector('.btn-text');
@@ -47,12 +45,25 @@ form.addEventListener('submit', async (e) => {
 
     const formData = new FormData(form);
     
+    // Get form values
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const project = formData.get('project');
+    const message = formData.get('message');
+    
+    // Create a nicely formatted message
+    const formattedData = new FormData();
+    formattedData.append('name', name);
+    formattedData.append('email', email);
+    formattedData.append('_replyto', email);
+    formattedData.append('_subject', `New ${project} inquiry from ${name}`);
+    formattedData.append('Project Type', project);
+    formattedData.append('message', message);
+    
     try {
-        // Replace 'YOUR_FORM_ID' with your Formspree form ID
-        // Example: https://formspree.io/f/xyzabcde
         const response = await fetch('https://formspree.io/f/xpqwvlrq', {
             method: 'POST',
-            body: formData,
+            body: formattedData,
             headers: {
                 'Accept': 'application/json'
             }
