@@ -51,12 +51,15 @@ form.addEventListener('submit', async (e) => {
     const project = formData.get('project');
     const message = formData.get('message');
     
-    // Create a nicely formatted message
+    // Create a unique ID for each submission
+    const uniqueId = Math.random().toString(36).substring(2, 8).toUpperCase();
+    
+    // Create a nicely formatted message with unique subject
     const formattedData = new FormData();
     formattedData.append('name', name);
     formattedData.append('email', email);
     formattedData.append('_replyto', email);
-    formattedData.append('_subject', `New ${project} inquiry from ${name}`);
+    formattedData.append('_subject', `New ${project} inquiry from ${name} [#${uniqueId}]`);
     formattedData.append('Project Type', project);
     formattedData.append('message', message);
     
